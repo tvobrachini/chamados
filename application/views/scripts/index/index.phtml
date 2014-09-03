@@ -1,0 +1,12 @@
+User: <?=$this->userx->nome;?>
+<br>
+<br>
+Chamados:
+<?php
+    foreach ($this->chamados as $chamado):
+?>
+    Titulo: <?=$chamado["titulo"];?><br>
+    Descricao: <?=$chamado["descricao"];?>
+<?php
+    endforeach;
+?>
