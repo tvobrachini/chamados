@@ -10,13 +10,7 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        //action body
-        $usuario = new Application_Model_DbTable_User();
-        $userx = $usuario->find(1)->current();
-
-        $chamados = $userx->findApplication_Model_DbTable_Chamado();
-        $this->view->userx = $userx;
-        $this->view->chamados = $chamados;
+        //action here
     }
 
 }
